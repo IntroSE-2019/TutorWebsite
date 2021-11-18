@@ -1,6 +1,9 @@
 from django.urls import path
+
 from . import views
 
+app_name = 'orders'
+
 urlpatterns = [
-    path('user/<str:UUID>', views.user, name='user'),
+    path('add/', views.add, name='add'),
 ]
