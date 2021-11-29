@@ -22,3 +22,12 @@
 .khung h3{
     width: 100%;
 }
+.khung_noiDung
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: white;
+    color:#007bff;
+    border-radius: 10px;
+}
