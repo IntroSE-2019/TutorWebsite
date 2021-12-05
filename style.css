@@ -1,13 +1,18 @@
+body{
+    background-color:cornsilk;
+}
 .BackG
 {
     background-color: #007bff;
-    height: 500px;
+    height: 400px;
 }
-.container-fluid
+.container
 {
     color: white;
     text-align:center;
     margin-top: 100px;
+    font-size: larger;
+    font-weight: bold;
 }
 .khung
 {
@@ -18,16 +23,17 @@
     color:#007bff;
     border-radius: 10px;
     margin-left: 40%;
+
 }
 .khung h3{
     width: 100%;
 }
-.khung_noiDung
+.BackG nav
 {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    background-color: white;
-    color:#007bff;
-    border-radius: 10px;
+    font-size:larger;
+    font-weight: 900;
+}
+footer
+{
+    font-size: 2em;
 }
