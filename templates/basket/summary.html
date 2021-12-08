@@ -1,4 +1,4 @@
-{% extends "../base.html" %}
+{% extends "base.html" %}
 {% load static %}
 {% load humanize %}
 {% block title %}Basket Summary{% endblock %}
@@ -40,7 +40,7 @@
     {% endwith %}
     {% endfor %}
     <div class="col-12 text-end">
-      <div class="h6 fw-bold">Subtotal: <div id="subtotal" class="d-inline-flex">{{ basket.get_total_price|intcomma }} VND</div></div>
+      <div class="h6 fw-bold">Total: <div id="total" class="d-inline-flex">{{ basket.get_total_price|intcomma }} VND</div></div>
     </div>
   </div>
 </main>

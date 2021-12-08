@@ -1,9 +1,12 @@
+import uuid
 from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
-                                        PermissionsMixin)
+                                        PermissionsMixin, User)
 from django.core.mail import send_mail
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_countries.fields import CountryField
+
+from tutorWebsite.settings import AUTH_USER_MODEL
 
 
 class CustomAccountManager(BaseUserManager):
@@ -43,6 +46,7 @@ class UserBase(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=150, blank=True)
     about = models.TextField(_(
         'about'), max_length=500, blank=True)
+    
     # Delivery details
     country = CountryField()
     phone_number = models.CharField(max_length=15, blank=True)
@@ -50,11 +54,15 @@ class UserBase(AbstractBaseUser, PermissionsMixin):
     address_line_1 = models.CharField(max_length=150, blank=True)
     address_line_2 = models.CharField(max_length=150, blank=True)
     town_city = models.CharField(max_length=150, blank=True)
+
     # User Status
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    
+    #Balance
+    balance = models.BigIntegerField(blank=False, default=0)
 
     objects = CustomAccountManager()
 
