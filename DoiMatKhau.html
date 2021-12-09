@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elearning Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="DoiMatKhau.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="BackG">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <b class="navbar-brand" href="#">Elearning</b>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" >
+            <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Thông Báo</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Khóa Học</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Tài Liệu</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Liên Hệ</a></b>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="image/img1.png" style="width: 20px;">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Thông tin cá nhân</button>
+                  <button class="dropdown-item" type="button">Lịch sử đăng ký môn học</button>
+                  <button class="dropdown-item" type="button">Đổi mật khẩu</button>
+                  <button class="dropdown-item" type="button">Đăng xuất</button>
+                </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <b><h2 style="text-align: center;">Đổi Mật Khẩu</h2></b>
+        <form>
+            <div class="form-group">
+              <label for="InPutName">Tên Đăng Nhập</label>
+              <input type="name" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Nhập Tên Đăng Nhập">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mật Khẩu Cũ</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mật Khẩu Mới</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Xác Nhận Mật Khẩu Mới</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="Butxn">
+            <button type="xacnhan" class="btn btn-primary">Xác Nhận Đổi Mật Khẩu</button>
+            </div>  
+          </form>
+    </div>
+
+  </div>
+</body>
+</html>
