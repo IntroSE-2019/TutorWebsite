@@ -1,0 +1,16 @@
+:root {
+    --bs-primary: #0d47a1;
+    --bs-secondary: #5472d3;
+    --bs-primary-rgb: 13, 71, 161;
+    --bs-secondary-rgb: 84, 114, 211;
+  }
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.Site-content {
+    flex: 1;
+}

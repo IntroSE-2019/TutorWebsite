@@ -1,6 +1,7 @@
 from unittest import skip
 
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
+from account.models import UserBase as User
 from django.http import HttpRequest
 from django.test import Client, RequestFactory, TestCase
 from django.urls import reverse
@@ -19,7 +20,7 @@ class TestViewResponses(TestCase):
     def setUp(self):
         self.c = Client()
         self.factory = RequestFactory()
-        User.objects.create(username='admin')
+        User.objects.create(user_name='admin')
         Category.objects.create(name='django', slug='django')
         Course.objects.create(category_id=1, title='django beginners', created_by_id=1,
                               slug='django-beginners', price='100000', image='django')

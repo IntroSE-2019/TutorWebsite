@@ -31,7 +31,6 @@ class Course(models.Model):
     image = models.ImageField(upload_to='images/', default='images/default.png')
     slug = models.SlugField(max_length=255)
     price = models.BigIntegerField()
-    in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -47,3 +46,6 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+class CourseMeeting(models.Model):
+    course = models.ForeignKey(Course, related_name="course_meeting", on_delete=models.CASCADE)

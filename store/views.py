@@ -15,5 +15,5 @@ def category_list(request, category_slug=None):
 
 
 def course_detail(request, slug):
-    course = get_object_or_404(Course, slug=slug, in_stock=True)
+    course = get_object_or_404(Course, slug=slug)
     return render(request, 'store/single.html', {'course': course})
